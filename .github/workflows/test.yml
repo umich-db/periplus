@@ -1,0 +1,13 @@
+name: Index integrity
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install openai==2.41.1 python-dotenv==1.2.2 numpy==2.4.6
+      - run: python -m unittest discover -s methods/llm_index -p 'test_*.py' -q
+      - run: python methods/llm_index/test_paper_conformance.py

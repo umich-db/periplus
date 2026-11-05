@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+envs/
+data/
+indexes/
+**/output/
+**/results/
+**/corpus/
+.hf_cache/
+*.log

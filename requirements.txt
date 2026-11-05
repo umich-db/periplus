@@ -1,0 +1,6 @@
+# Core index and local semantic balancing. Full benchmark pins: requirements/.
+openai==2.41.1
+python-dotenv==1.2.2
+numpy==2.4.6
+sentence-transformers==5.6.0
+pandas==3.0.3
