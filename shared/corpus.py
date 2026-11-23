@@ -76,7 +76,7 @@ DISPLAY = {
     "naive_gpt": "Naive", "rag": "RAG", "raptor": "RAPTOR", "leann": "LEANN",
     "graphrag_local": "GraphRAG", "graphrag_global": "GraphRAG-global",
     "docetl_standard": "DocETL", "moar": "MOAR", "shed": "SHED",
-    "doctopus": "Doctopus", "llm_index": "Pariplus",
+    "doctopus": "Doctopus", "llm_index": "Periplus",
 }
 
 OURS = "llm_index"
