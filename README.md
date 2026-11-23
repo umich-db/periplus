@@ -1,7 +1,7 @@
-# LLM Index: Indexing Long Documents for LLM-Based Analysis
+# Pariplus: Indexing Long Documents for LLM-Based Analysis
 
-Research implementation of a hierarchical, human-readable index for long-document
-question answering. The model discovers a document's schema, extracts records in
+Pariplus is a research implementation of a hierarchical, human-readable index for
+long-document question answering. The model discovers a document's schema, extracts records in
 two passes, writes a tree of bounded Markdown pages, and navigates summaries to
 retrieve answers. Source spans support a bounded fallback to the original text.
 
@@ -15,8 +15,8 @@ research workspace are excluded.
 Use Python 3.11 on Linux:
 
 ```bash
-git clone https://github.com/umich-db/llm-index.git
-cd llm-index
+git clone https://github.com/umich-db/pariplus.git
+cd pariplus
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -117,6 +117,11 @@ datasets are unnecessary. They cover page preservation, malformed links,
 connectivity, balancing, provenance, bounded routing, and stale-source rejection.
 The optional historical gateway-cutoff extension is absent and explicitly skipped
 by the conformance script.
+
+The implementation retains the historical `methods/llm_index` directory,
+`llm_index` benchmark identifier, and `LLM_INDEX_*` environment variables for
+compatibility with existing experiment scripts and results. Its display name in
+benchmark charts is Pariplus.
 
 ## Source and paper
 

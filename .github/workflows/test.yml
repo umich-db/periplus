@@ -1,4 +1,4 @@
-name: Index integrity
+name: Pariplus integrity
 on: [push, pull_request]
 jobs:
   test:

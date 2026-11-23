@@ -1,4 +1,4 @@
-"""Portable entrypoint for the repaired index; see README.md."""
+"""Portable entrypoint for Pariplus; see README.md."""
 import argparse
 import json
 import os
